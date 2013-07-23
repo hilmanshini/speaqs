@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/widget40"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ffcccccc"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+    android:id="@+id/container_mode"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    android:layout_below="@+id/widget41"
+    android:orientation="vertical" >
+    <hilmanshini.speaqs.custom.BounceScrollVIew
+        android:overScrollMode="always"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TableLayout
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:id="@+id/container"
+	    >
+            <include layout="@layout/singlespeaqsnosound"/>
+            <include layout="@layout/singlespeaqsnosound"/>
+            <include layout="@layout/singlespeaqsnosound"/>
+        </TableLayout>
+        
+    </hilmanshini.speaqs.custom.BounceScrollVIew>
+	
+    
+</LinearLayout>
+    
+
+
+<RelativeLayout
+	android:id="@+id/widget46"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentTop="true"
+	android:layout_alignParentLeft="true">
+</RelativeLayout>
+
+</RelativeLayout>

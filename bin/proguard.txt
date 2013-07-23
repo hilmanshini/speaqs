@@ -1,0 +1,12 @@
+# view AndroidManifest.xml #generated:16
+-keep class hilmanshini.speaqs.SpeaqsBoxActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:21
+-keep class hilmanshini.speaqs.TestActivity { <init>(...); }
+
+# view res/layout/container.xml #generated:17
+# view res/layout/myprofile.xml #generated:108
+# view res/layout/myprofile.xml #generated:18
+# view res/layout/search_scroll_container.xml #generated:1
+-keep class hilmanshini.speaqs.custom.BounceScrollVIew { <init>(...); }
+

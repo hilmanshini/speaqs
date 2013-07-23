@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.85"
+    android:background="#cccccc"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/ImageButton02"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/search_hdpi" />
+
+    <ImageButton
+        android:id="@+id/ImageButton04"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/voicebox_hdpi" />
+
+    <ImageButton
+        android:id="@+id/update_status_mention_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ImageButton03"
+        android:src="@drawable/myspeaqs_hdpi" />
+
+    <ImageButton
+        android:id="@+id/ImageButton03"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/ImageButton04"
+        android:src="@drawable/mention_hdpi" />
+
+    <ImageView
+        android:id="@+id/ImageView01"
+        android:layout_width="fill_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/ImageButton04"
+        android:background="@drawable/spupperbg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ImageView01" >
+         
+
+
+        <ImageButton
+            android:id="@+id/update_status_mention_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_menu_search" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/update_status_mention_button"
+            layout="@layout/search_scroll_container" />
+    
+	</RelativeLayout>
+
+
+</RelativeLayout>

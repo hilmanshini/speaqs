@@ -1,0 +1,12 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <style name="SpeaqsHeaderBlack" >
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:background">#000000</item>
+        <item name="android:contentDescription">header_container</item>
+        
+    </style>
+
+</resources>

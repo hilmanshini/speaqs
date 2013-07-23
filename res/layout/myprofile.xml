@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	android:id="@+id/widget40"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:background="#ffcccccc"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/container_mode"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/widget41"
+        android:orientation="vertical" >
+
+        <hilmanshini.speaqs.custom.BounceScrollVIew
+            android:id="@+id/bounceScrollVIew1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="always" >
+
+            <TableLayout
+                android:id="@+id/container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </TableLayout>
+        </hilmanshini.speaqs.custom.BounceScrollVIew>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/bounceScrollVIew1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/bounceScrollVIew1"
+            android:background="@drawable/noimage" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/button1"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/button1"
+            android:text="Edit Profile"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView1"
+            android:text="Pick Image"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/button2"
+            android:layout_marginTop="1dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:layout_marginLeft="10dp"
+            android:text="UDIN"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="Udin Jana"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/imageView2"
+            android:layout_alignTop="@+id/imageView2"
+            android:text="Udin Jana&apos;s Posts" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageView2"
+            android:orientation="vertical" >
+			 <hilmanshini.speaqs.custom.BounceScrollVIew
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:overScrollMode="always" >
+
+            <TableLayout
+                android:id="@+id/container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <include layout="@layout/singlespeaqsnosound" />
+
+                <include layout="@layout/singlespeaqsnosound" />
+
+                <include layout="@layout/singlespeaqsnosound" />
+            </TableLayout>
+        </hilmanshini.speaqs.custom.BounceScrollVIew>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

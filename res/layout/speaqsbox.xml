@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_speaqs"
+    android:orientation="vertical" >
+
+    <!-- HEADER -->
+    <include
+        layout="@layout/header_speaqs_auth" >
+        
+    </include>
+    <!-- HEADER -->
+
+
+    <!-- CONTENT -->
+
+    <include
+        android:layout_height="310dp"
+        layout="@layout/container" />
+
+    <!-- CONTENT -->
+
+
+    <!-- FOOTER -->
+
+    <!-- FOOTER -->
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="0.85"
+    android:background="#cccccc"
+    android:orientation="vertical" >
+
+    
+
+    <RelativeLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:layout_below="@+id/ImageView01"
+        android:layout_toRightOf="@+id/relativeLayout1"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/update_status_mention_button"
+            android:ems="10"
+            android:text="asdasd"
+            android:textSize="15sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <include
+            android:id="@+id/include1"
+            android:layout_width="match_parent"
+            android:layout_height="282dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/update_status_mention_button"
+            layout="@layout/search_scroll_container" />
+
+        <ImageButton
+            android:id="@+id/update_status_speaqs_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/include1"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_menu_send" />
+
+        <ImageButton
+            android:id="@+id/update_status_mention_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/update_status_speaqs_button"
+            android:src="@drawable/ic_menu_search" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

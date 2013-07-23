@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="#ffffff"
+xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/widget41"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_alignParentTop="true"
+	android:layout_alignParentLeft="true">
+
+<ImageButton
+	android:id="@+id/vbhdpibutton"
+	android:layout_width="80dp"
+	android:layout_height="80dp"
+	android:layout_marginTop="5dp"
+	android:src="@drawable/voicebox_hdpi" />
+
+<ImageButton
+	android:id="@+id/mentionhdpibutton"
+	android:layout_width="80dp"
+	android:layout_height="80dp"
+	android:layout_marginTop="5dp"
+	android:src="@drawable/mention_hdpi" />
+<ImageButton
+	android:id="@+id/mshdpibutton"
+	android:layout_width="80dp"
+	android:layout_height="80dp"
+	android:layout_marginTop="5dp"
+	android:src="@drawable/myspeaqs_hdpi" />
+<ImageButton
+	android:id="@+id/searchhdpibutton"
+	android:layout_width="80dp"
+	android:layout_height="80dp"
+	android:layout_marginTop="5dp"
+	android:src="@drawable/search_hdpi" />
+</LinearLayout>
