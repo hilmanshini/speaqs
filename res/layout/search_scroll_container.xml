@@ -12,20 +12,12 @@
         android:layout_height="wrap_content" >
 
         <TableLayout
-            android:id="@+id/container"
+            android:id="@+id/container_search"
             android:layout_width="330dp"
             android:layout_height="match_parent"
             android:background="#999999" >
 
-            <include layout="@layout/singlesearch" />
-
-            <include layout="@layout/singlesearch" />
-
-            <include layout="@layout/singlesearch" />
-
-            <include layout="@layout/singlesearch" />
-
-            <include layout="@layout/singlesearch" />
+          
         </TableLayout>
     </LinearLayout>
 

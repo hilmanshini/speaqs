@@ -33,11 +33,12 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/editText1"
-        android:layout_width="160dp"
+        android:id="@+id/login_username_edittext"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignTop="@+id/textView2"
         android:layout_marginLeft="14dp"
+        android:layout_marginRight="30dp"
         android:layout_toRightOf="@+id/textView2"
         android:ems="10"
         android:singleLine="true"
@@ -50,9 +51,9 @@
         android:id="@+id/TextView01"
         android:layout_width="110dp"
         android:layout_height="35dp"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/login_username_edittext"
         android:layout_marginTop="17dp"
-        android:layout_toLeftOf="@+id/editText1"
+        android:layout_toLeftOf="@+id/login_username_edittext"
         android:background="#cccccc"
         android:gravity="center"
         android:text="PASSWORD"
@@ -60,23 +61,24 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/EditText01"
-        android:layout_width="160dp"
+        android:id="@+id/login_password_edittext"
+        android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_alignBaseline="@+id/TextView01"
         android:layout_alignBottom="@+id/TextView01"
-        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignLeft="@+id/login_username_edittext"
+        android:layout_marginRight="30dp"
         android:ems="10"
         android:singleLine="true"
         android:textSize="15sp" />
 
     <Button
-        android:id="@+id/TextView02"
+        android:id="@+id/login_button_login"
         android:layout_width="300dp"
         android:layout_height="35dp"
         android:layout_alignLeft="@+id/TextView01"
-        android:layout_alignRight="@+id/EditText01"
-        android:layout_below="@+id/EditText01"
+        android:layout_alignRight="@+id/login_password_edittext"
+        android:layout_below="@+id/login_password_edittext"
         android:layout_marginTop="20dp"
         android:background="#cccccc"
         android:gravity="center"

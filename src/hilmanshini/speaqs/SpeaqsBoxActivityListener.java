@@ -1,5 +1,6 @@
 package hilmanshini.speaqs;
 
+import android.graphics.Bitmap;
 import android.view.View;
 
 public interface SpeaqsBoxActivityListener {
@@ -21,5 +22,16 @@ public interface SpeaqsBoxActivityListener {
 
 
         void onMentionBackPressed();
+        void onPickImageMyProfileClick();
 
+		void onFinishPickImageMyProfile();
+		public void onGetResponseImageChangeFromServer();
+
+		void onFinishRecord();
+		public void onReplyClick(View invoker);
+
+		void onShareClicK(View v);
+		void onFavClick(View v);
+		void onFavSubmitGetResponse(View v);
+		void onFavCancelGetResponse(View v);
 }

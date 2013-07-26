@@ -7,6 +7,8 @@ import speaqs.hilmanshini.service.ViewFlipperSpeaqsBoxServiceImpl;
 import speaqs.hilmanshini.tool.AndroidTool;
 import android.app.Activity;
 import android.app.Activity;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MotionEvent;
@@ -35,12 +37,16 @@ public class TestActivity extends Activity implements SpeaqsBoxActivityListener 
         speaqsBoxService.bindMenuButton(this);
         speaqsBoxService.loadContainerSpeaqsBox();
         speaqsBoxService.makeButtonMenuFit();
-        //speaqsBoxService.addSample();
+        speaqsBoxService.makeSearchContainerFit();
+        speaqsBoxService.bindPickImageMyProfile(this);
+        speaqsBoxService.addSample(this);
+        
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+    	
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
     }
@@ -104,5 +110,74 @@ public class TestActivity extends Activity implements SpeaqsBoxActivityListener 
         speaqsBoxService.handleOnBack();
     }
 
-    
+	
+	@Override
+	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+		// TODO Auto-generated method stub
+		super.onActivityResult(requestCode, resultCode, data);
+		
+		speaqsBoxService.handleOnActivityResult(requestCode,resultCode,data,this);
+	}
+
+	@Override
+	public void onFinishPickImageMyProfile() {
+		if(speaqsBoxService.isImageBitmapFromGalleryExists()){
+			speaqsBoxService.sendImageChangeToServer(this);
+		}  
+	}
+	
+	public void onGetResponseImageChangeFromServer(){
+		if(speaqsBoxService.isResponseImageChangeServerSuccess()){
+			speaqsBoxService.changeImageProfileWithPickedInGallery();
+		} else {
+			speaqsBoxService.alertSpeaqsDialogResponse(speaqsBoxService.getResponseImageChangeFromServer());
+		}
+	}
+
+	@Override
+	public void onPickImageMyProfileClick() {
+		speaqsBoxService.pickGallery();
+	}
+
+	@Override
+	public void onFinishRecord() {
+		speaqsBoxService.makeActiveUpdateStatusMelodiButtonAvailable();
+	}
+
+
+	@Override
+	public void onReplyClick(View invoker) {
+		this.speaqsBoxService.showDialogUpdateStatus(this);
+	}
+
+	@Override
+	public void onShareClicK(View v) {
+	}
+
+	@Override
+	public void onFavClick(View v) {
+		if(speaqsBoxService.isAlreadyFavorite()){
+			this.speaqsBoxService.cancelFavorite(v,this);
+		} else {
+			this.speaqsBoxService.submitFavorite(v,this);
+		}
+		
+	}
+
+
+
+	@Override
+	public void onFavSubmitGetResponse(View v) {
+		speaqsBoxService.makeUnFav(v);
+		
+	}
+
+	@Override
+	public void onFavCancelGetResponse(View v) {
+		speaqsBoxService.makeFav(v);
+		
+	}
+	
+
+	
 }

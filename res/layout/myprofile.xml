@@ -29,7 +29,7 @@
         </hilmanshini.speaqs.custom.BounceScrollVIew>
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/image_profile_pic_edit_profile"
             android:layout_width="60dp"
             android:layout_height="50dp"
             android:layout_below="@+id/bounceScrollVIew1"
@@ -42,19 +42,20 @@
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
-            android:layout_alignTop="@+id/button1"
+            android:layout_alignTop="@+id/button_image_change_to_server"
             android:layout_marginRight="5dp"
-            android:layout_toLeftOf="@+id/button1"
+            android:layout_toLeftOf="@+id/button_image_change_to_server"
+            android:visibility="invisible"
             android:text="Edit Profile"
             android:textSize="10sp" />
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/button_image_change_to_server"
             android:layout_width="wrap_content"
             android:layout_height="30dp"
             android:layout_marginRight="20dp"
             android:layout_alignParentRight="true"
-            android:layout_below="@+id/imageView1"
+            android:layout_below="@+id/image_profile_pic_edit_profile"
             android:text="Pick Image"
             android:textSize="10sp" />
 
@@ -72,8 +73,8 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignTop="@+id/imageView1"
-            android:layout_toRightOf="@+id/imageView1"
+            android:layout_alignTop="@+id/image_profile_pic_edit_profile"
+            android:layout_toRightOf="@+id/image_profile_pic_edit_profile"
             android:layout_marginLeft="10dp"
             android:text="UDIN"
             android:textColor="#000000"
@@ -86,7 +87,7 @@
             android:layout_below="@+id/textView1"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
-            android:layout_toRightOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/image_profile_pic_edit_profile"
             android:text="Udin Jana"
             android:textColor="#000000" />
 
@@ -117,9 +118,6 @@
 
                 <include layout="@layout/singlespeaqsnosound" />
 
-                <include layout="@layout/singlespeaqsnosound" />
-
-                <include layout="@layout/singlespeaqsnosound" />
             </TableLayout>
         </hilmanshini.speaqs.custom.BounceScrollVIew>
         </LinearLayout>

@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Speaqs4</string>
+    <string name="app_name">Speaqs3</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+     <!-- CONFIG -->
+    <string name="app_config_login_url">http://spiqs.jelastic.tsukaeru.net/spiqs/login.html</string>
+    <string name="app_config_profile_url">http://spiqs.jelastic.tsukaeru.net/spiqs/member/profile.html</string>
+    <string name="app_config_profilepic_url">http://spiqs.jelastic.tsukaeru.net/spiqs/member/profilepicbyid/</string>
+    <string name="app_config_profilepicbyid_url">http://spiqs.jelastic.tsukaeru.net/spiqs/member/profilepicbyid/</string>
+    <string name="app_config_register_url">http://spiqs.jelastic.tsukaeru.net/spiqs/register/register.html</string>
+    <string name="app_config_mention_url">http://spiqs.jelastic.tsukaeru.net/spiqs/member/mymention/</string>
+    <string name="app_config_news_url">http://spiqs.jelastic.tsukaeru.net/spiqs/member/mynews/</string>
+    <string name="app_config_myspeaqs_url">http://spiqs.jelastic.tsukaeru.net/spiqs/member/myspeaqs/</string>
+    <string name="app_config_search_user_url">http://spiqs.jelastic.tsukaeru.net/spiqs/other/search/</string>
+    <string name="app_config_updatestatus">http://spiqs.jelastic.tsukaeru.net/spiqs/member/addspeaqs2.html</string>
+    <string name="app_config_addmention">http://spiqs.jelastic.tsukaeru.net/spiqs/member/addmention.html</string>
+    <string name="app_config_sound_by_id">http://spiqs.jelastic.tsukaeru.net/spiqs/member/soundbyid/</string>
+    <string name="app_config_contact">http://spiqs.jelastic.tsukaeru.net/spiqs/member/contact/</string>
+    <string name="app_config_add_contact">http://spiqs.jelastic.tsukaeru.net/spiqs/member/addcontact/</string>
+    <string name="app_config_remove_contact">http://spiqs.jelastic.tsukaeru.net/spiqs/member/removecontact/</string>
+    <string name="app_config_reply">http://spiqs.jelastic.tsukaeru.net/spiqs/member/reply/</string>
+    <string name="app_config_fav">http://spiqs.jelastic.tsukaeru.net/spiqs/member/fav/</string>
+    <string name="app_config_unfav">http://spiqs.jelastic.tsukaeru.net/spiqs/member/unfav/</string>
 
 </resources>

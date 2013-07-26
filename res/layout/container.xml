@@ -24,9 +24,8 @@
 	    android:layout_height="fill_parent"
 	    android:id="@+id/container"
 	    >
-            <include layout="@layout/singlespeaqsnosound"/>
-            <include layout="@layout/singlespeaqsnosound"/>
-            <include layout="@layout/singlespeaqsnosound"/>
+            
+            
         </TableLayout>
         
     </hilmanshini.speaqs.custom.BounceScrollVIew>

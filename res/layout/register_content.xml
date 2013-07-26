@@ -34,7 +34,8 @@
 
     <EditText
         android:id="@+id/editText1"
-        android:layout_width="160dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
         android:layout_height="40dp"
         android:layout_alignTop="@+id/textView2"
         android:layout_marginLeft="14dp"
@@ -61,7 +62,8 @@
 
     <EditText
         android:id="@+id/EditText01"
-        android:layout_width="160dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
         android:layout_height="40dp"
         android:layout_alignBaseline="@+id/TextView01"
         android:layout_alignBottom="@+id/TextView01"
@@ -85,7 +87,8 @@
 
     <EditText
         android:id="@+id/EditText02"
-        android:layout_width="160dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
         android:layout_height="40dp"
         android:layout_alignBaseline="@+id/TextView03"
         android:layout_alignBottom="@+id/TextView03"
@@ -96,7 +99,8 @@
 
     <EditText
         android:id="@+id/EditText03"
-        android:layout_width="160dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
         android:layout_height="40dp"
         android:layout_alignBaseline="@+id/TextView04"
         android:layout_alignBottom="@+id/TextView04"
@@ -132,7 +136,8 @@
 
     <EditText
         android:id="@+id/EditText04"
-        android:layout_width="160dp"
+        android:layout_width="match_parent"
+        android:layout_marginRight="30dp"
         android:layout_height="40dp"
         android:layout_alignBaseline="@+id/TextView05"
         android:layout_alignBottom="@+id/TextView05"

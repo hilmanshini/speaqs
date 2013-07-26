@@ -116,7 +116,7 @@
                         android:background="#00000000" >
 
                         <ImageButton
-                            android:id="@+id/button1"
+                            android:id="@+id/replyx"
                             android:src="@drawable/replyx"
                             android:layout_width="120dp"
                             android:layout_height="wrap_content"
@@ -126,7 +126,7 @@
                             android:text="Button" />
 
                         <ImageButton
-                            android:id="@+id/button2"
+                            android:id="@+id/crownx"
                             android:layout_width="120dp"
                             android:layout_height="wrap_content"
                             android:layout_alignParentBottom="true"
@@ -137,7 +137,7 @@
                             android:text="Button" />
 
                         <ImageButton
-                            android:id="@+id/button3"
+                            android:id="@+id/sharex"
                             android:layout_width="120dp"
                             android:src="@drawable/sharex"
                             android:layout_height="wrap_content"
